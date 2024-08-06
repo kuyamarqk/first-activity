@@ -1,5 +1,6 @@
 import Image from "next/image";
-import emailIcon from "@/public/email.svg"; // Ensure this path is correct
+import Link from "next/link";
+
 
 const Profile = () => {
     return (
@@ -19,27 +20,34 @@ const Profile = () => {
                 </div>
                 <div className="flex flex-col items-center md:items-start space-y-4 mt-4 w-full">
                     <div className="flex flex-wrap justify-center md:justify-start space-x-4">
-                        <Image
-                            src="/fbIcon.svg"
-                            width={30}
-                            height={30}
-                            alt="Follow me on Facebook"
-                            className=""
-                        />
-                        <Image
-                            src="/xIcon.svg"
-                            width={30}
-                            height={30}
-                            alt="Follow me on X"
-                            className=""
-                        />
-                        <Image
-                            src="/messengerIcon.svg"
-                            width={30}
-                            height={30}
-                            alt="Message me on Messenger"
-                            className=""
-                        />
+                        <Link href="https://www.facebook.com/marqk051209" >
+                            <Image
+                                src="/fbIcon.svg"
+                                width={30}
+                                height={30}
+                                alt="Follow me on Facebook"
+                                className=""
+                            />
+                        </Link>
+                        <Link href="https://x.com/kuyamarqk?t=qYTXrSXze1cn8qD1R3PSww&s=09">
+                            <Image
+                                src="/xIcon.svg"
+                                width={30}
+                                height={30}
+                                alt="Follow me on X"
+                                className=""
+                            />
+                        </Link>
+                        <Link href="https://m.me/marqk051209">
+                            <Image
+                                src="/messengerIcon.svg"
+                                width={30}
+                                height={30}
+                                alt="Message me on Messenger"
+                                className=""
+                            />
+                        </Link>
+
                     </div>
                     <div className="flex flex-col md:flex-row gap-4 w-full max-w-sm">
                         <button
