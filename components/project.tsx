@@ -6,7 +6,7 @@ const Project = () => {
             <h1 className="text-4xl text-center mb-6">BahalaNaGang.Co</h1>
 
             {/* Sections Container */}
-            <div className="flex flex-col md:flex-row justify-between mb-8 space-y-8 md:space-y-0">
+            <div className="flex flex-col md:flex-row justify-between gap-4 mb-8 space-y-8 md:space-y-0">
                 {/* Company Background Section */}
                 <div className="flex-3">
                     <h2 className="text-2xl text-orange-500 mb-2">Company Background</h2>

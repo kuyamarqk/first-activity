@@ -4,22 +4,23 @@ import Link from "next/link";
 
 const Profile = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center md:items-start text-white w-full">
+        <div className="relative z-10 mt-[-45px] flex flex-col md:flex-row items-center 
+        md:items-start text-white w-full">
             {/* Profile Content */}
             <div className="flex flex-col items-center 
                             md:items-start w-full md:w-2/3 lg:w-1/5
-                            max-w-md mb-4 md:mb-0 md:mr-1 md:ml-10 ">
-                <div className="w-full max-w-xs">
+                            max-w-md mb-4 md:mb-0 md:mr-4 md:ml-11 ">
+                <div className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40">
                     <Image
                         src="/avatar.png"
                         alt="avatar"
                         height={150}
                         width={150}
-                        className="rounded-2xl mx-auto md:mx-0"
+                        className="rounded-full mx-auto md:mx-0"
                     />
                 </div>
-                <div className="flex flex-col items-center md:items-start space-y-4 mt-4 w-full">
-                    <div className="flex flex-wrap justify-center md:justify-start space-x-4">
+                <div className="flex flex-col items-center md:items-start  space-y-4 mt-4 w-full">
+                    <div className="flex flex-wrap justify-center md:justify-start md:ml-4 space-x-4">
                         <Link href="https://www.facebook.com/marqk051209" >
                             <Image
                                 src="/fbIcon.svg"
@@ -49,26 +50,33 @@ const Profile = () => {
                         </Link>
 
                     </div>
-                    <div className="flex flex-col md:flex-row gap-4 w-full max-w-sm">
-                        <button
-                            type="button"
-                            className="flex  justify-center focus:outline-none text-white bg-orange-500 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-900 w-full md:w-auto sm:w-1/3 "
-                        >
-                            <Image
-                                src="/email.svg"
-                                width={20}
-                                height={20}
-                                alt="Icon for email"
-                                className="invert"
-                            />
-                        </button>
-                        <button
-                            type="button"
-                            className="flex items-center justify-center focus:outline-none text-white bg-orange-500 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-900 w-full md:w-auto sm:w-2/4"
-                        >
-                            Save
-                        </button>
-                    </div>
+
+                </div>
+                <div className="flex flex-row gap-4 w-full items-center md:flex-row  mt-4">
+                    <button
+                        type="button"
+                        className="flex justify-center focus:outline-none text-white
+                             bg-orange-500 hover:bg-yellow-500 focus:ring-4
+                              focus:ring-yellow-300 font-medium rounded-lg 
+                              text-sm px-5 py-2.5 dark:focus:ring-yellow-900 w-1/3 mx-auto"
+                    >
+                        <Image
+                            src="/email.svg"
+                            width={20}
+                            height={20}
+                            alt="Icon for email"
+                            className="invert"
+                        />
+                    </button>
+                    <button
+                        type="button"
+                        className="flex justify-center focus:outline-none
+                             text-white bg-orange-500 hover:bg-yellow-500 focus:ring-4
+                              focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 
+                              dark:focus:ring-yellow-900 w-2/3  mx-auto"
+                    >
+                        Save
+                    </button>
                 </div>
                 <hr className="block md:hidden my-6 border-gray-700 w-full" />
             </div>
